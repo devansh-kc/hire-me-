@@ -12,52 +12,47 @@ import { SiExpress } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiReacthookform } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiAppwrite } from "react-icons/si";
+import { BiLogoTailwindCss } from "react-icons/bi";
 const TechStack = () => {
-  const SkillIcon = [
-    "FaHtml5",
-    "FaCss3Alt",
-    "IoLogoJavascript",
-    "FaReact",
-    "TbBrandRedux",
-    "TbBrandNextjs",
-    "SiPostman",
-    "TbBrandNodejs",
-    "SiExpress",
-    "BiLogoMongodb",
-    "SiReacthookform",
-    "FaGitAlt"
+  const SkillIcon: any = [
+    FaHtml5,
+    FaCss3Alt,
+    BiLogoTailwindCss,
+    IoLogoJavascript,
+    FaReact,
+    TbBrandRedux,
+    TbBrandNextjs,
+    SiPostman, // Note: Using an alias to avoid naming conflict
+    TbBrandNodejs,
+    SiExpress,
+    BiLogoMongodb,
+    SiReacthookform,
+    FaGitAlt,
+    IoLogoFirebase,
+    SiAppwrite,
   ];
-  const iconComponents :any = {
-    FaHtml5: FaHtml5,
-    FaCss3Alt: FaCss3Alt,
-    IoLogoJavascript: IoLogoJavascript,
-    FaReact: FaReact,
-    TbBrandRedux: TbBrandRedux,
-    TbBrandNextjs: TbBrandNextjs,
-    SiPostman: SiPostman, // Note: Using an alias to avoid naming conflict
-    TbBrandNodejs: TbBrandNodejs,
-    SiExpress: SiExpress,
-    BiLogoMongodb: BiLogoMongodb,
-    SiReacthookform: SiReacthookform,
-    FaGitAlt:FaGitAlt
-  };
 
   return (
-    <main className="  flex flex-wrap justify-around items-center md:px-6 rounded-md min-h-96 max-h-full   p-4 m-4 font-mono">
+    <main className=" h-[40rem] flex flex-wrap justify-around items-center md:px-4 rounded-md min-h-96 max-h-full   p-4 m-4 font-mono">
       <section className="flex flex-col items-start p-6 ">
         <h3 className="font-semibold text-xl uppercase md:mb-5 ">my</h3>
         <h1 className=" text-7xl md:text-[7rem]  tracking-tight md:-my-4">
           Tech <br /> Stack
         </h1>
-        <h4 className="text-sm md:text-md text-muted-foreground mb-2">
+        <h4 className="text-sm md:text-md text-muted-foreground my-4">
           My primary focus on javascript ecosystem
         </h4>
       </section>
+      {/* className="border cursor-pointer badge-light dark:badge-dark text-5xl  rounded-full" */}
       <section className="flex justify-center gap-2 w-full md:w-1/4 items-center h-44 justify-items-stretch p-2 md:pb-5 flex-wrap ">
-        {SkillIcon.map((skill) => {
-          const IconComponent = iconComponents[skill];
-          return <IconComponent className="border cursor-pointer badge-light dark:badge-dark h-9 w-9 m-3  rounded-full" key={skill} />;
-        })}
+        {SkillIcon.map((Icon: any, index: number) => (
+          <Icon
+            key={index}
+            className="text-4xl m-2 cursor-pointer badge-light dark:badge-dark"
+          />
+        ))}
       </section>
     </main>
   );
