@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import ContactMe from "@/components/ContactMe";
 import HeroPage from "@/components/HeroPage";
 import MyWork from "@/components/MyWork";
 import Navbar from "@/components/Navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <TechStack />
       <MyWork />
       <About/>
+      <ContactMe/>
     </>
   );
 }
