@@ -3,7 +3,7 @@ import Image from "next/image";
 import tea from "../../../public/profileimg/tea.jpg";
 
 interface ImgAndAltProp {
-  image: string;
+  image: any;
   title: string;
 }
 const ProjectImg: React.FC<ImgAndAltProp> = ({ image, title }) => {
