@@ -24,25 +24,25 @@ function Navbar({ className }: { className?: string }) {
             item="Home"
           ></MenuItem>
         </Link>
-        <Link href="/">
+        <Link href="https://github.com/devansh-kc">
           <MenuItem
             setActive={setActive}
             active={active}
-            item="About"
+            item="Github"
           ></MenuItem>
         </Link>
-        <Link href="/">
+        <Link href="https://twitter.com/devanshkc26">
           <MenuItem
             setActive={setActive}
             active={active}
-            item="Work"
+            item="Twitter"
           ></MenuItem>
         </Link>
-        <Link href="/">
+        <Link href="https://www.linkedin.com/in/devansh-karamchandani-32a083243/">
           <MenuItem
             setActive={setActive}
             active={active}
-            item="Connect With Me"
+            item="Linkedin"
           ></MenuItem>
         </Link>
       </Menu>
