@@ -6,7 +6,8 @@ import ProjectImg from "./ProjectImg";
 
 const Project = () => {
   const { id } = useParams();
-  const foundProject = Work.find((project) => project.id == parseInt(id));
+  const projectId = parseInt(id)
+  const foundProject = Work.find((project) => project.id == projectId);
   return (
     <section>
       <main>
