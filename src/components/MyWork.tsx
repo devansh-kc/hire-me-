@@ -1,63 +1,49 @@
+import { cn } from "@/utils/cn";
 import React from "react";
-import { StickyScroll } from "./ui/sticky-scroll-reveal";
+import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { Button } from "./ui/moving-border";
+import Link from "next/link";
 import Image from "next/image";
 
-const content = [
-  {
-    title: "Collaborative Editing",
-    description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
-      </div>
-    ),
-  },
-  {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src="/linear.webp"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "Version control",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
-      </div>
-    ),
-  },
-  {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
-      </div>
-    ),
-  },
-];
+import { Work } from "../data/projectData";
+
 const MyWork = () => {
   return (
-    <main className=" scroll-smooth">
+    <main className="h-full w-full ">
       <h1 className="bg-black p-5 m-5  text-center  text-7xl  font-mono">
         Check Out My Work
       </h1>
-      <section className="p-10 ">
-        <StickyScroll content={content} />
+      <section className="p-10  ">
+        <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+          {Work.map((item, i) => (
+            <Link href={`/projectPage/${item.id}`}>
+              <BentoGridItem
+                key={i}
+                title={item.title}
+                description={item.description}
+                header={
+                  <Image
+                    src={item.header}
+                    width={300}
+                    height={300}
+                    alt={item.title}
+                  />
+                }
+                className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+              />
+            </Link>
+          ))}
+        </BentoGrid>
+        <div className="m-[5rem]  items-center justify-center text-center">
+          <Link href="https://github.com/devansh-kc">
+            <Button
+              borderRadius="1.75rem"
+              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+              See All my projects
+            </Button>
+          </Link>
+        </div>
       </section>
     </main>
   );

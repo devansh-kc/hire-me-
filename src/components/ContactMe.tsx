@@ -1,28 +1,58 @@
 "use client";
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
-import { GreetingsData } from "@/data/typed";
 
 const ContactMe = () => {
   return (
-    <main className=" block   justify-center m-[10rem]">
-      <section className="">
-        <h1 className="text-5xl md:text-8xl font-bold  text-center">
-          <Typewriter
-            words={GreetingsData}
-            typeSpeed={500}
-            loop={false}
-            cursor={true}
-            cursorBlinking={true}
-          />
-        </h1>
-      </section>
-
-      <section className="mt-20">
-        <form action="" className=" grid  justify-center ">
-          <input type="text" className=" m-2 px-10 py-3" />
-          <input type="text"  className="m-2 p-2"/>
-          <input type="text" className="m-2 p-2" />
+    <main className=" container mx-auto h-screen flex items-center justify-center ">
+      <section className="bg-black text-white p-8 rounded-lg shadow-lg w-full ">
+        <form action="">
+          <div className="mb-4">
+            <label htmlFor="FullName" className="block mb-1">
+              FullName
+            </label>
+            <input
+              type="text"
+              id="FullName"
+              name="FullName"
+              className="w-full px-4 py-2 rounded-md bg-black my-4 border border-gray-600 focus:outline-none focus:border-blue-500"
+              placeholder="Full Name"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="w-full px-4 py-2 rounded-md bg-black my-4 border border-gray-600 focus:outline-none focus:border-blue-500"
+              placeholder="Email"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="Subject" className="block mb-1">
+              Subject
+            </label>
+            <input
+              type="text"
+              name="Subject"
+              id="Subject"
+              className="w-full px-4 py-2 rounded-md bg-black my-4 border border-gray-600 focus:outline-none focus:border-blue-500"
+              placeholder="Subject"
+            />
+          </div>
+          <div>
+            <label htmlFor="Message">Message</label>
+            <textarea
+              className="w-full px-4 py-2 rounded-md bg-black my-4 border border-gray-600 focus:outline-none focus:border-blue-500"
+              placeholder=" feel free to reach out to me "
+              name="Message"
+              id="Message"
+              rows={4}
+            ></textarea>
+          </div>
+          <button className="bg-white text-black px-6 py-2 rounded-md focus:outline-none">
+            Submit
+          </button>
         </form>
       </section>
     </main>

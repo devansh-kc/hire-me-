@@ -4,7 +4,9 @@ import HeroPage from "@/components/HeroPage";
 import MyWork from "@/components/MyWork";
 import Navbar from "@/components/Navbar";
 import TechStack from "@/components/TechStack";
+import TypewriteAnimation from "@/components/ui/Typewriter-animation";
 import Image from "next/image";
+import { GreetingsData } from "@/data/typed";
 
 export default function Home() {
   return (
@@ -13,8 +15,9 @@ export default function Home() {
       <HeroPage />
       <TechStack />
       <MyWork />
-      <About/>
-      <ContactMe/>
+      <About />
+      <TypewriteAnimation words={GreetingsData} />
+      <ContactMe />
     </>
   );
 }
