@@ -18,7 +18,7 @@ const MyWork = () => {
           {Work.map((item, i) => (
             <Link href={`/projectPage/${item.id}`}>
               <BentoGridItem
-                key={item.id}
+                key={item.id} 
                 title={item.title}
                 description={item.description}
                 header={
