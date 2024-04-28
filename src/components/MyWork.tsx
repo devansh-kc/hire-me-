@@ -9,7 +9,7 @@ import { Work } from "../data/projectData";
 
 const MyWork = () => {
   return (
-    <main className="h-full w-full ">
+    <main className="h-full w-full  justify-center items-center">
       <h1 className="bg-black p-5 m-5  text-center  text-7xl  font-mono">
         Check Out My Work
       </h1>
@@ -29,7 +29,7 @@ const MyWork = () => {
                     alt={item.title}
                   />
                 }
-                className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+                className={i === 3 || i === 6 ? "md:col-span-1" : ""}
               />
             </Link>
           ))}
