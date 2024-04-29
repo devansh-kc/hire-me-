@@ -16,9 +16,9 @@ const MyWork = () => {
       <section className="p-10  ">
         <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
           {Work.map((item, i) => (
-            <Link href={`/projectPage/${item.id}`} key={item.id}>
+            <Link href={item.Link} key={item.id}>
               <BentoGridItem
-                key={item.id} 
+                key={item.id}
                 title={item.title}
                 description={item.description}
                 header={

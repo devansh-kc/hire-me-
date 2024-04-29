@@ -20,12 +20,14 @@ export const Work = [
   {
     id: 1,
     title: "Music academy frontend using Nextjs",
+    Link: "https://github.com/devansh-kc/Music-Academy-next-js",
     description: "Explore the birth of groundbreaking ideas and inventions.",
     header: academy,
   },
   {
     id: 2,
     title: "Blog App using react and Appwrite",
+    Link: "https://github.com/devansh-kc/blog-App",
     description: "Dive into the transformative power of technology.",
     header: Blog,
   },
@@ -33,6 +35,7 @@ export const Work = [
     id: 3,
     title:
       "Youtube backend clone using nodejs mongodb,and express and many more",
+    Link: "https://github.com/devansh-kc/Mern-stack-video-streaming-app",
     description: "Discover the beauty of thoughtful and functional design.",
     header: YTClone,
   },
