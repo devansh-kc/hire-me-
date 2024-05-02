@@ -17,5 +17,4 @@ export const GreetingsData = [
 
   "Contact me below. 😄",
   
-  "Say salud",
 ];
