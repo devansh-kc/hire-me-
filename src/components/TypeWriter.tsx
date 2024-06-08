@@ -5,8 +5,8 @@ import { Typewriter } from "react-simple-typewriter";
 
 function TypeWriterAnim() {
   return (
-    <div className=" flex  flex-wrap align-middle  items-center justify-center h-1/2 ">
-      <h1 className="  text-5xl md:text-7xl  font-bold font-mono text-center ">
+    <div className="justify-between h-full">
+      <h1 className="text-5xl md:text-7xl  font-bold font-mono text-center ">
         <Typewriter
           words={GreetingsData}
           typeSpeed={70}
