@@ -43,16 +43,21 @@ const MyWork = () => {
                 </p>
                 <Link href={`/projectPage/${item.id}`}>Read more</Link>
                 <div className="flex items-center space-x-2">
+                  {item.deployedApp ? (
+                    <Link
+                      href={item.deployedApp}
+                      className="inline-flex items-center space-x-1 text-sm font-medium text-primary transition-colors duration-300 hover:text-primary/80"
+                      prefetch={false}
+                    >
+                      <BiLink className="h-4 w-4" />
+                      <span>Live Site</span>
+                    </Link>
+                  ) : (
+                    ""
+                  )}
+
                   <Link
-                    href="#"
-                    className="inline-flex items-center space-x-1 text-sm font-medium text-primary transition-colors duration-300 hover:text-primary/80"
-                    prefetch={false}
-                  >
-                    <BiLink className="h-4 w-4" />
-                    <span>Live Site</span>
-                  </Link>
-                  <Link
-                    href="#"
+                    href={item?.github}
                     className="inline-flex items-center space-x-1 text-sm font-medium text-primary transition-colors duration-300 hover:text-primary/80"
                     prefetch={false}
                   >
