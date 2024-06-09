@@ -35,7 +35,7 @@ const TechStack = () => {
   ];
 
   return (
-    <main className=" h-[40rem] flex flex-wrap justify-around items-center md:px-4 rounded-md min-h-96 max-h-full   p-4 m-4 font-mono">
+    <main className=" h-[40rem] flex flex-wrap justify-around items-center md:px-4 rounded-md min-h-96 max-h-full   bg-black font-mono">
       <section className="flex flex-col items-start p-6 ">
         <h3 className="font-semibold text-xl uppercase md:mb-5 ">my</h3>
         <h1 className=" text-7xl md:text-[7rem]  tracking-tight md:-my-4">

@@ -3,8 +3,6 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <>
-      <h2 className="text-center text-7xl items-center  justify-center font-mono font-bold bg-black pt-6">Contact me below</h2>
       <main className="mx-auto h-screen flex items-center justify-center bg-black">
         <section className=" text-white p-8 rounded-lg shadow-lg w-full ">
           <form action="">
@@ -58,7 +56,6 @@ const ContactMe = () => {
           </form>
         </section>
       </main>
-    </>
   );
 };
 
