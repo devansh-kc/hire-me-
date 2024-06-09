@@ -39,9 +39,8 @@ const MyWork = () => {
                   {item.title}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  {item.description.substring(0, 150)}
+                  {item.description}
                 </p>
-                <Link href={`/projectPage/${item.id}`}>Read more</Link>
                 <div className="flex items-center space-x-2">
                   {item.deployedApp ? (
                     <Link

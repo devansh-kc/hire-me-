@@ -30,8 +30,6 @@ export const Work = [
     github: "https://github.com/devansh-kc/Music-Academy-next-js",
     deployedApp: "https://music-academy-next-js-ten.vercel.app/",
 
-    TecUsed:
-      "<li>Next.js: Framework for building server-rendered React applications.</li> <li>TypeScript: Adds type safety to JavaScript, ensuring more reliable code.</li> <li>Tailwind CSS: Utility-first CSS framework for rapid UI development.</li>",
   },
   {
     id: 2,
@@ -39,8 +37,6 @@ export const Work = [
     Link: "https://github.com/devansh-kc/blog-App",
     description:
       "The Blog App is a full-stack web application designed to facilitate the creation, management, and display of blog posts. It provides a user-friendly interface for authors to write and publish their content, and for readers to browse and engage with the posts. This project demonstrates a comprehensive use of modern web development technologies and best practices, focusing on performance, scalability, and user experience",
-    bulletPoints:
-      "User Authentication: Secure user authentication and authorization using Appwrite, ensuring that only authenticated users can create, edit, or delete blog posts.CRUD Operations: Full CRUD (Create, Read, Update, Delete) functionality for blog posts, allowing users to manage their content effortlessly.Rich Text Editor: Integrated rich text editor for composing blog posts with formatting options, enhancing the writing experience for authors.Responsive Design: Fully responsive layout, ensuring optimal viewing and interaction experience across various devices and screen sizes.SEO Optimization: Implemented SEO best practices to improve the visibility and search engine ranking of blog posts.Performance Optimization: Focused on performance improvements to ensure fast load times and smooth interactions.Database Integration: Utilized Appwrite's database services for data storage, providing a robust and scalable solution for managing blog posts and user data.Error Handling: Comprehensive error handling and validation using Zod, ensuring data integrity and providing meaningful feedback to users.",
     header: Blog,
     github: "https://github.com/devansh-kc/Music-Academy-next-js",
     deployedApp: "https://music-academy-next-js-ten.vercel.app/",
