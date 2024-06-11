@@ -25,7 +25,7 @@ const About = () => {
             innovative solutions.
           </p>
         </div>
-        <div className="flex flex-wrap items-center justify-center ">
+        {/* <div className="flex flex-wrap items-center justify-center ">
           <Image
             height={350}
             width={350}
@@ -33,7 +33,7 @@ const About = () => {
             alt="tea"
             className="rounded-3xl "
           />
-        </div>
+        </div> */}
       </section>
     </main>
   );
