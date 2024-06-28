@@ -29,8 +29,8 @@ export const Work = [
 
     github: "https://github.com/devansh-kc/Music-Academy-next-js",
     deployedApp: "https://music-academy-next-js-ten.vercel.app/",
-
   },
+  
   {
     id: 2,
     title: "Blog App using react and Appwrite",
@@ -65,29 +65,12 @@ export const Work = [
   },
   {
     id: 5,
-    title: "anonyms messaging app",
+    title: "Anonymous messaging app",
     github: "https://github.com/devansh-kc/anonymous-feedback",
     deployedApp: "https://anonymous-feedback-rho.vercel.app/",
     header: NextAuth,
     description:
-      "So I have made this authentication app using next js , because i want to learn how authentication works in next js . ",
-  },
-  // {
-  //   title: "The Pursuit of Knowledge",
-  //   description: "Join the quest for understanding and enlightenment.",
-  //   header: <Skeleton />,
-  //   icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-  // },
-  // {
-  //   title: "The Joy of Creation",
-  //   description: "Experience the thrill of bringing ideas to life.",
-  //   header: <Skeleton />,
-  //   icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
-  // },
-  // {
-  //   title: "The Spirit of Adventure",
-  //   description: "Embark on exciting journeys and thrilling discoveries.",
-  //   header: <Skeleton />,
-  //   icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-  // },
+      "An anonymous messaging app built with Next.js, TypeScript, and MongoDB, featuring Zod for schema validation, JWT and NextAuth for secure user sessions, and Google Generative AI for message generation. Hosted on GitHub, this app ensures user privacy and encourages honest feedback.",
+  },  
+ 
 ];
