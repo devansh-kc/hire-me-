@@ -27,7 +27,7 @@ const HomePage = () => {
             words={[
               "Self Taught full stack developer",
               "Tech Enthusiast",
-              "A Bike Enthusiast",
+              "Bike Enthusiast",
             ]}
             typeSpeed={80}
             loop={false}

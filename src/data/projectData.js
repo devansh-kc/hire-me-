@@ -3,6 +3,8 @@ import academy from "../../public/assets/musicAcademy.png";
 import Blog from "../../public/assets/blog.png";
 import YTClone from "../../public/assets/Yt-cloneBackend.png";
 import NextAuth from "../../public/assets/nextAuth.png";
+import AnonymsMessage from "../../public/assets/anonyms-messaging-app.png";
+import YoutubeDownloader from "../../public/assets/yoututbe-downloader.png";
 
 import {
   IconArrowWaveRightUp,
@@ -30,20 +32,17 @@ export const Work = [
     github: "https://github.com/devansh-kc/Music-Academy-next-js",
     deployedApp: "https://music-academy-next-js-ten.vercel.app/",
   },
-  
+
   {
     id: 2,
-    title: "Blog App using react and Appwrite",
-    Link: "https://github.com/devansh-kc/blog-App",
+    title: "Anonymous messaging app",
+    github: "https://github.com/devansh-kc/anonymous-feedback",
+    deployedApp: "https://anonymous-feedback-rho.vercel.app/",
+    header: AnonymsMessage,
     description:
-      "The Blog App is a full-stack web application designed to facilitate the creation, management, and display of blog posts. It provides a user-friendly interface for authors to write and publish their content, and for readers to browse and engage with the posts. This project demonstrates a comprehensive use of modern web development technologies and best practices, focusing on performance, scalability, and user experience",
-    header: Blog,
-    github: "https://github.com/devansh-kc/Music-Academy-next-js",
-    deployedApp: "https://music-academy-next-js-ten.vercel.app/",
-
-    TecUsed:
-      "<li>Frontend: React.js</li><li>Backend: Appwrite </li><li>Database: Appwrite Database</li><li>Authentication: Appwrite Auth</li><li>Styling: CSS Modules, Tailwind CSS</li><li>Hosting: Vercel</li>",
+      "An anonymous messaging app built with Next.js, TypeScript, and MongoDB, featuring Zod for schema validation, JWT and NextAuth for secure user sessions, and Google Generative AI for message generation. Hosted on GitHub, this app ensures user privacy and encourages honest feedback.",
   },
+
   {
     id: 3,
     title:
@@ -56,6 +55,28 @@ export const Work = [
   },
   {
     id: 4,
+    title: "Blog App using react and Appwrite",
+    Link: "https://github.com/devansh-kc/blog-App",
+    description:
+      "The Blog App is a full-stack web application designed to facilitate the creation, management, and display of blog posts. It provides a user-friendly interface for authors to write and publish their content, and for readers to browse and engage with the posts. This project demonstrates a comprehensive use of modern web development technologies and best practices, focusing on performance, scalability, and user experience",
+    header: Blog,
+    github: "https://github.com/devansh-kc/Music-Academy-next-js",
+    deployedApp: "https://music-academy-next-js-ten.vercel.app/",
+
+    TecUsed:
+      "<li>Frontend: React.js</li><li>Backend: Appwrite </li><li>Database: Appwrite Database</li><li>Authentication: Appwrite Auth</li><li>Styling: CSS Modules, Tailwind CSS</li><li>Hosting: Vercel</li>",
+  },
+  {
+    id: 5,
+    title: "Youtube Video Downloader",
+    github: "https://github.com/devansh-kc/yt-video-downloader",
+    deployedApp: "https://yt-video-downloader-two.vercel.app/",
+    header: YoutubeDownloader,
+    description:
+      "This is a YouTube Video Downloader application built with Next.js, React, Tailwind CSS, and ytdl-core. It allows users to download YouTube videos by simply entering the video URL.",
+  },
+  {
+    id: 6,
     title: "Next auth",
     github: "https://github.com/devansh-kc/next-auth",
 
@@ -63,14 +84,4 @@ export const Work = [
       "So I have made this authentication app using next js , because i want to learn how authentication works in next js . ",
     header: NextAuth,
   },
-  {
-    id: 5,
-    title: "Anonymous messaging app",
-    github: "https://github.com/devansh-kc/anonymous-feedback",
-    deployedApp: "https://anonymous-feedback-rho.vercel.app/",
-    header: NextAuth,
-    description:
-      "An anonymous messaging app built with Next.js, TypeScript, and MongoDB, featuring Zod for schema validation, JWT and NextAuth for secure user sessions, and Google Generative AI for message generation. Hosted on GitHub, this app ensures user privacy and encourages honest feedback.",
-  },  
- 
 ];
