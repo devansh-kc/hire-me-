@@ -12,7 +12,7 @@ import { Work } from "../data/projectData";
 
 const MyWork = () => {
   return (
-    <section className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
+    <section className=" mt-10 mx-auto max-w-7xl  sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28  ">
       {" "}
       <h2 className="p-6 text-2xl  tracking-tight font-extrabold  sm:text-3xl md:text-4xl">
         Check out my work
@@ -24,7 +24,7 @@ const MyWork = () => {
             <div className="relative h-48 overflow-hidden rounded-t-lg">
               <Image
                 src={item.header}
-                alt="Project 1"
+                alt={item.title}
                 width={600}
                 height={400}
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
