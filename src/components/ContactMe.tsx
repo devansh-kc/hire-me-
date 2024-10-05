@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { SiAxios } from "react-icons/si";
 import axios from "axios";
-import Popup from "./ui/popup";
+// import Popup from "./ui/popup";
 
 const ContactMe = () => {
   const [name, setName] = useState("");
@@ -80,7 +80,7 @@ const ContactMe = () => {
             Submit
           </button>
         </form>
-        <Popup/>
+        {/* <Popup/> */}
       </section>
     </main>
   );
