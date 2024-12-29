@@ -34,7 +34,7 @@ const Project = () => {
                   ))}
               </ul>
               <h3 className="text-2xl font-bold">Tech Stack</h3>
-              <ul className="text-gray-500 dark:text-gray-400" dangerouslySetInnerHTML={{__html:foundProject?.TecUsed!}}></ul>
+              
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <Image
