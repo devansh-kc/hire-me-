@@ -50,15 +50,17 @@ const MyWork = () => {
                 ) : (
                   ""
                 )}
-
-                <Link
-                  href={item?.github}
-                  className="inline-flex items-center space-x-1 text-sm font-medium text-primary transition-colors duration-300 hover:text-primary/80"
-                  prefetch={false}
-                >
-                  <FaGithub className="h-4 w-4" />
-                  <span>GitHub</span>
-                </Link>
+                {item.github?.map((links, idx) => (
+                  <Link
+                    key={idx}
+                    href={links}
+                    className="inline-flex items-center space-x-1 text-sm font-medium text-primary transition-colors duration-300 hover:text-primary/80"
+                    prefetch={false}
+                  >
+                    <FaGithub className="h-4 w-4" />
+                    <span>github</span>
+                  </Link>
+                ))}
               </div>
             </div>
             {/* </Link> */}

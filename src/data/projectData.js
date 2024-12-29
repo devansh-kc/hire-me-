@@ -1,10 +1,11 @@
 import Image from "next/image";
 import academy from "../../public/assets/musicAcademy.png";
 import Blog from "../../public/assets/blog.png";
+import Turkify from "../../public/assets/Turkify.png";
 import YTClone from "../../public/assets/Yt-cloneBackend.png";
 import NextAuth from "../../public/assets/nextAuth.png";
 import AnonymsMessage from "../../public/assets/anonyms-messaging-app.png";
-import YoutubeDownloader from "../../public/assets/yoututbe-downloader.png";
+import YoutubeClone from "../../public/assets/yt-CloneFrontend.png";
 
 import {
   IconArrowWaveRightUp,
@@ -29,14 +30,24 @@ export const Work = [
       "Resource Library: Front-end design for accessing learning materials like video tutorials and sheet music.Responsive Design: Ensures seamless user experience across all devices.",
     header: academy,
 
-    github: "https://github.com/devansh-kc/Music-Academy-next-js",
+    github: ["https://github.com/devansh-kc/Music-Academy-next-js"],
     deployedApp: "https://music-academy-next-js-ten.vercel.app/",
   },
 
   {
+    id: 6,
+    title: " Youtube Clone Front-End using React and Tailwind",
+    header: YoutubeClone,
+    github: [
+      "https://github.com/devansh-kc/Video-streaming-mern-app-frontend- ",
+    ],
+    description:
+      "The front-end of your video streaming application is built with React and Vite, utilizing Tailwind CSS for styling. This setup ensures a responsive and efficient user interface, providing a seamless video streaming experience.",
+  },
+  {
     id: 2,
     title: "Anonymous messaging app",
-    github: "https://github.com/devansh-kc/anonymous-feedback",
+    github: ["https://github.com/devansh-kc/anonymous-feedback"],
     deployedApp: "https://anonymous-feedback-rho.vercel.app/",
     header: AnonymsMessage,
     description:
@@ -47,7 +58,7 @@ export const Work = [
     id: 3,
     title:
       "Youtube backend clone using nodejs mongodb,and express and many more",
-    github: "https://github.com/devansh-kc/Mern-stack-video-streaming-app",
+    github: ["https://github.com/devansh-kc/Mern-stack-video-streaming-app"],
 
     description:
       "It is a backend project made  with mongodb as database, Node.js as runtime enviroment express and axios for API and i have enabled jwt for Auth and currently I am working on the frontend part of this project .",
@@ -55,33 +66,27 @@ export const Work = [
   },
   {
     id: 4,
-    title: "Blog App using react and Appwrite",
-    Link: "https://github.com/devansh-kc/blog-App",
-    description:
-      "The Blog App is a full-stack web application designed to facilitate the creation, management, and display of blog posts. It provides a user-friendly interface for authors to write and publish their content, and for readers to browse and engage with the posts. This project demonstrates a comprehensive use of modern web development technologies and best practices, focusing on performance, scalability, and user experience",
-    header: Blog,
-    github: "https://github.com/devansh-kc/Music-Academy-next-js",
-    deployedApp: "https://music-academy-next-js-ten.vercel.app/",
+    title: "Data Labeling Platform",
 
-    TecUsed:
-      "<li>Frontend: React.js</li><li>Backend: Appwrite </li><li>Database: Appwrite Database</li><li>Authentication: Appwrite Auth</li><li>Styling: CSS Modules, Tailwind CSS</li><li>Hosting: Vercel</li>",
+    github: [
+      "https://github.com/devansh-kc/Turkify-backend",
+
+      "https://github.com/devansh-kc/Saas-app-user-frontend-",
+
+      "https://github.com/devansh-kc/saas-appworker-frontend",
+    ],
+    description:
+      "This repository contains the backend code for Turkify, a project that integrates AWS services with Web3 payment methods. The goal of Turkify is to facilitate transactions between users and service providers in a secure and efficient manner, leveraging blockchain technology for trustless transactions.",
+    header: Turkify,
   },
   {
     id: 5,
-    title: "Youtube Video Downloader",
-    github: "https://github.com/devansh-kc/yt-video-downloader",
-    deployedApp: "https://yt-video-downloader-two.vercel.app/",
-    header: YoutubeDownloader,
+    title: "Blog App using react and Appwrite",
+    // Link: "https://github.com/devansh-kc/blog-App",
     description:
-      "This is a YouTube Video Downloader application built with Next.js, React, Tailwind CSS, and ytdl-core. It allows users to download YouTube videos by simply entering the video URL.",
-  },
-  {
-    id: 6,
-    title: "Next auth",
-    github: "https://github.com/devansh-kc/next-auth",
-
-    description:
-      "So I have made this authentication app using next js , because i want to learn how authentication works in next js . ",
-    header: NextAuth,
+      "The Blog App is a full-stack web application designed to facilitate the creation, management, and display of blog posts. It provides a user-friendly interface for authors to write and publish their content, and for readers to browse and engage with the posts. This project demonstrates a comprehensive use of modern web development technologies and best practices, focusing on performance, scalability, and user experience",
+    header: Blog,
+    github: ["https://github.com/devansh-kc/blog-App"],
+    deployedApp: "https://blog-app-rho-one.vercel.app/",
   },
 ];
